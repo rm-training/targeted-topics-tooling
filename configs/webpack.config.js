@@ -1,3 +1,4 @@
+// npm install --save-dev webpack webpack-cli babel-loader
 const path = require('path');
 
 module.exports = {
