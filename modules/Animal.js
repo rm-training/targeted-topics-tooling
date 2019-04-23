@@ -6,7 +6,7 @@ class Animal {
   }
 
   speak() {
-    return `${this.name} says: ${this.sounds}`;
+    return `${this.name} says: ${this.sound}`;
   }
 
   run() {
