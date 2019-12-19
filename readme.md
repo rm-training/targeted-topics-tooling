@@ -2,6 +2,19 @@
 
 Script to run through with web tooling
 
+## Pre-reqs
+
+If you want to execute any script that uses ES Modules, you'll need to:
+
+- Be running Node 13 or above OR use --experimental-modules flag
+- Add the following to your `package.json`
+
+```
+"type":"module"
+```
+
+- Then you're all set
+
 ## Linting
 
 We'll use `eslint`. We could also use `prettier`, which is more for formatting whereas eslint handles both formatting and linting (catching & reparing bugs/syntax issues).
@@ -14,6 +27,7 @@ npx eslint --init
 ```
 
 Edit the config
+
 ```
 # add...
 "no-unused-vars":["off"]
@@ -30,6 +44,7 @@ npm install husky --save-dev
 ```
 
 Edit your package.json:
+
 ```
 	"pre-commit": "eslint *.js"
 ```
