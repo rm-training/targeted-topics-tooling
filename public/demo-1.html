@@ -2,34 +2,47 @@
 <html lang="en">
 
 <head>
-  <title>Targeted Topics - Mastering the DOM</title>
+  <title>Targeted Topics - Modules & Tooling</title>
   <meta charset="utf-8">
 
   <link href="/vendor/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css">
 
-  <!-- default -->
-  <script type="text/javascript" src="/js/demo-1-a.js"></script>
-  <script type="text/javascript" src="/js/demo-1-b.js"></script>
+  <script type="module" src="./js/util.js"></script>
+  <script type="module" src="./js/app.js"></script>
+  <!--<script src="./js/non-modular.js" defer></script>-->
 
-  <!-- deferred (you can also try "async") -->
-  <!--
-  <script type="text/javascript" defer src="/js/demo-1-a.js"></script>
-  <script type="text/javascript" defer src="/js/demo-1-b.js"></script>
-  -->
 </head>
 
 <body class="ui container">
     <h1>Demo / Playground</h1>
 
-    <div class="ui segment" id="special-segment">
-      <h2>Sub header</h2>
-
-      <p>Some text...</p>
-
-      <button class="ui button" id="main-button">Clickaroo</button>
+    <div id="random-div" class="ui segment">
+      <h2>I am a random div</h2>
     </div>
-    <script>
-      console.log('Safer spot for DOM-specific JS');
-    </script>
+
+  <script>
+    // this is not OK - the imports are not available here
+    console.group('From the <script> block');
+    console.log(doMath(1,2));
+    sayHello();
+    console.groupEnd();
+  </script>
+
+  <script type="module">
+    // this is OK
+    import {sayHello} from './js/util.js';
+
+    console.group('From the <script type=module> block');
+    sayHello();
+    console.groupEnd();
+  </script>
+
+<!-- 
+  <script>
+    // this will not work
+    console.group('Did we affect the window object?');
+    thingy();
+    console.groupEnd();
+  </script> -->
 </body>
 </html>

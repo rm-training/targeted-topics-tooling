@@ -7,7 +7,9 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./public --port 3030 -o",
+    "with-modules": "node --experimental-modules"
   },
   "author": "Ryan Morris",
   "license": "ISC",
