@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Targeted Topics - Mastering the DOM</title>
+  <meta charset="utf-8">
+
+  <link href="/vendor/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css">
+
+  <!-- default -->
+  <script type="text/javascript" src="/js/demo-1-a.js"></script>
+  <script type="text/javascript" src="/js/demo-1-b.js"></script>
+
+  <!-- deferred (you can also try "async") -->
+  <!--
+  <script type="text/javascript" defer src="/js/demo-1-a.js"></script>
+  <script type="text/javascript" defer src="/js/demo-1-b.js"></script>
+  -->
+</head>
+
+<body class="ui container">
+    <h1>Demo / Playground</h1>
+
+    <div class="ui segment" id="special-segment">
+      <h2>Sub header</h2>
+
+      <p>Some text...</p>
+
+      <button class="ui button" id="main-button">Clickaroo</button>
+    </div>
+    <script>
+      console.log('Safer spot for DOM-specific JS');
+    </script>
+</body>
+</html>

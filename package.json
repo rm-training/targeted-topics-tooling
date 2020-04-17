@@ -12,7 +12,8 @@
   "author": "Ryan Morris",
   "license": "ISC",
   "dependencies": {
-    "esm": "^3.2.22"
+    "esm": "^3.2.22",
+    "http-server": "^0.12.1"
   },
   "type": "module"
 }
