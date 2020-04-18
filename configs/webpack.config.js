@@ -17,9 +17,15 @@ module.exports = {
     ],
   },
   mode: 'development',
-  entry: './3-bundle-me.js',
+  entry: './src/3-bundle-me.js',
   output: {
     filename: '3-bundle-me.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  // mode: 'development',
+  // entry: './public/js/app.js',
+  // output: {
+  //   filename: '[name].[contentHash].js',
+  //   path: path.resolve(__dirname, 'public/dist'),
+  // },
 };

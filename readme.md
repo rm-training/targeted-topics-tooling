@@ -6,14 +6,31 @@ Script to run through with web tooling
 
 If you want to execute any script that uses ES Modules, you'll need to:
 
-- Be running Node 13 or above OR use --experimental-modules flag
-- Add the following to your `package.json`
-
-```
+- Be running Node 13 or above OR use `--experimental-modules` flag
+- AND the following to your `package.json` OR use `.mjs` file extensions
+```json
 "type":"module"
 ```
-
 - Then you're all set
+
+## Gotchas
+
+### Curious "node-gyp" build errors? 
+
+They [talk about it here](https://discuss.codecademy.com/t/installation-error-create-react-app/458364/6).
+
+Try these steps:
+
+```bash
+# find where the xcode cli tools are installed
+xcode-select --print-path
+
+# nuke em
+sudo rm -r -f /Library/Developer/CommandLineTools
+
+# reinstall
+xcode-select --install
+```
 
 ## Linting
 

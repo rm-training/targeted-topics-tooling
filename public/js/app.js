@@ -6,6 +6,9 @@ console.log(doMath(1,2));
 sayHello();
 
 const el = document.getElementById('random-div');
-el.style.backgroundColor = 'red';
-
+if (el) {
+    el.style.backgroundColor = 'red';
+} else {
+    console.warn('The element did not exist');
+}
 console.groupEnd();
