@@ -12,33 +12,34 @@
 </head>
 
 <body class="ui container">
-    <h1>Demo / Playground</h1>
+  <h1>Demo / Playground</h1>
 
-    <p>Try me out with Parcel or WebPack</p>
+  <p>Try me out with Parcel or WebPack</p>
 
-    <p>When using Parcel, we can easily point to this html file as the entry-point</p>
+  <p>When using Parcel, we can easily point to this html file as the entry-point</p>
 
-    <ul>
-      <li>Parcel will build everything and put it in a `dist` folder</li>
-      <li>We will need to change our script types from "module"</li>
-      <li>We will need to "defer" or move where our script tags live on the page</li>
-    </ul>
+  <ul>
+    <li>Parcel will build everything and put it in a `dist` folder</li>
+    <li>We will need to change our script types from "module"</li>
+    <li>We will need to "defer" or move where our script tags live on the page</li>
+  </ul>
 
-    <p>When using WebPack, you'll have to configure a lot more yourself. 
-      We can't point to this html file (without teaching WebPack how to handle htmls) 
-      and so instead we'll point to an entry javascript file, which loads all dependencies
-      for a page.</p>
+  <p>When using WebPack, you'll have to configure a lot more yourself.
+    We can't point to this html file (without teaching WebPack how to handle htmls)
+    and so instead we'll point to an entry javascript file, which loads all dependencies
+    for a page.</p>
 
-    <ul>
-      <li>The entry file should reference all dependencies.</li>
-      <li>WebPack will bundle them for you and output a "built" file.</li>
-      <li>We will need to update our html to point to the built file, or teach WebPack how to do that.</li>
-    </ul>
+  <ul>
+    <li>The entry file should reference all dependencies.</li>
+    <li>WebPack will bundle them for you and output a "built" file.</li>
+    <li>We will need to update our html to point to the built file, or teach WebPack how to do that.</li>
+  </ul>
 
-    </p>
+  </p>
 
-    <div id="random-div" class="ui segment">
-      <h2>I am a random div</h2>
-    </div>
+  <div id="random-div" class="ui segment">
+    <h2>I am a random div</h2>
+  </div>
 </body>
+
 </html>

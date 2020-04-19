@@ -13,7 +13,10 @@
     "with-modules": "node --experimental-modules",
     "prettier": "prettier ./src/1-lint-me.js --write",
     "eslint": "eslint --fix src/1-lint-me.js",
-    "build": "parcel build ./public/demo-2.html"
+    "build": "parcel build ./public/demo-2.html",
+    "example-1": "node --experimental-modules ./examples/es-modules/index.js",
+    "example-2": "node --experimental-modules ./examples/module-load-order/index.js",
+    "exercise-1": "node --experimental-modules ./exercises/1/index.js"
   },
   "author": "Ryan Morris",
   "license": "ISC",

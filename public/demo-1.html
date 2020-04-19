@@ -14,35 +14,36 @@
 </head>
 
 <body class="ui container">
-    <h1>Demo / Playground</h1>
+  <h1>Demo / Playground</h1>
 
-    <div id="random-div" class="ui segment">
-      <h2>I am a random div</h2>
-    </div>
+  <div id="random-div" class="ui segment">
+    <h2>I am a random div</h2>
+  </div>
 
   <script>
     // this is not OK - the imports are not available here
     console.group('From the <script> block');
-    console.log(doMath(1,2));
+    console.log(doMath(1, 2));
     sayHello();
     console.groupEnd();
   </script>
 
   <script type="module">
-    // this is OK
-    import {sayHello} from './js/util.js';
+    // this is OK because type="module"
+    import { sayHello } from './js/util.js';
 
     console.group('From the <script type=module> block');
     sayHello();
     console.groupEnd();
   </script>
 
-<!-- 
+  <!-- 
   <script>
-    // this will not work
+    // this will not work... but why?
     console.group('Did we affect the window object?');
     thingy();
     console.groupEnd();
   </script> -->
 </body>
+
 </html>
