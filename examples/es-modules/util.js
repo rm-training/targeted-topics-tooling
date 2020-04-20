@@ -19,3 +19,4 @@ export { renameMe as renamed };
 
 // import anyName from './util.js'
 export default doMath;
+//export default { hello: sayHello, doMath };
