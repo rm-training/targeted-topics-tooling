@@ -24,7 +24,6 @@
     "esm": "^3.2.22",
     "http-server": "^0.12.1"
   },
-  "type": "module",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -39,7 +38,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.4",
+    "prettier": "2.0.4",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
