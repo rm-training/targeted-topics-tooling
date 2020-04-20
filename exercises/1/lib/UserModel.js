@@ -9,7 +9,7 @@
 // database specific stuff...
 // @todo - bonus - this should probably be in its own DB module
 const getFromDB = function () {};
-const saveToDb = function () {};
+const saveToDB = function () {};
 let isFaked = true;
 
 // main class/module dealing with record manipulation in a store
@@ -20,7 +20,7 @@ class Model {
     return isFaked ? this.fakeData[id] : getFromDB();
   }
   static save(id, data) {
-    isFaked ? (this.fakeData[id] = data) : saveToDb();
+    isFaked ? (this.fakeData[id] = data) : saveToDB();
   }
 }
 
