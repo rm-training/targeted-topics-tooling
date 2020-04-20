@@ -11,18 +11,24 @@
  *
  */
 
-import { UserModel as User, setFakeUserData } from "./lib/UserModel.js";
+
+import { UserModel, setFakeUserData } from "./lib/UserModel.js";
 import Auth from "./lib/Auth.js";
 
+// sets some data data
 setFakeUserData([
   { id: 1, username: "username" },
   { id: 2, username: "jimbob" },
 ]);
 
-const user = User.get(1);
+// get a "user" record - id:1
+const user = UserModel.get(1);
 
+// "log in" the user and get a "token"
 const token = Auth.login(user);
 
+// if the user logged in, log their name...
 if (token) {
   console.log(`Welcome ${user.username}`);
+  console.assert(user.username, 'jimbob');
 }

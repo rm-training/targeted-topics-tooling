@@ -5,8 +5,8 @@
  * - There are a few concerns here, can we re-organize?
  * - Does this need to be a class anymore?
  */
-const getFromDB = function () {};
-const saveToDb = function () {};
+import {getFromDB, saveToDB} from './Db.js';
+
 let isFaked = true;
 
 class Model {
@@ -15,7 +15,7 @@ class Model {
     return isFaked ? this.fakeData[id] : getFromDB();
   }
   static save(id, data) {
-    isFaked ? (this.fakeData[id] = data) : saveToDb();
+    isFaked ? (this.fakeData[id] = data) : saveToDB();
   }
 }
 
