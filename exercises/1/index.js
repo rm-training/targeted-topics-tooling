@@ -11,7 +11,8 @@
  *
  */
 
-// @todo missing some imports
+// @todo import named imports from UserModel
+// @todo import the default from Auth
 
 // sets some data data
 setFakeUserData([
@@ -20,7 +21,7 @@ setFakeUserData([
 ]);
 
 // get a "user" record - id:1
-const user = UserTable.get(1);
+const user = UserModel.get(1);
 
 // "log in" the user and get a "token"
 const token = Auth.login(user);

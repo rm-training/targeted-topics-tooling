@@ -7,6 +7,8 @@
  * - should it really be an "IIFE" anymore?
  * - should anything remain "private"?
  */
+
+// @todo - bonus - refactor away the artificial module
 const Auth = (function () {
   function login(user) {
     console.log("Logged in", user);
@@ -24,4 +26,4 @@ const Auth = (function () {
   };
 })();
 
-// @todo missing some exports
+// @todo export Auth as the default

@@ -7,11 +7,13 @@
  */
 
 // database specific stuff...
+// @todo - bonus - this should probably be in its own DB module
 const getFromDB = function () {};
 const saveToDb = function () {};
 let isFaked = true;
 
 // main class/module dealing with record manipulation in a store
+// @todo - bonus - this could probably be its own module, too
 class Model {
   static fakeData = [];
   static get(id) {
@@ -36,4 +38,5 @@ class UserModel extends Model {
   }
 }
 
-// @todo - missing some exports
+// @todo - export fakeData as... setFakeUserData
+// @todo - export the UserModel
