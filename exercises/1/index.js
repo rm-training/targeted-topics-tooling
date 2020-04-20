@@ -29,4 +29,5 @@ const token = Auth.login(user);
 // if the user logged in, log their name...
 if (token) {
   console.log(`Welcome ${user.username}`);
+  console.assert(user.username, 'jimbob');
 }
