@@ -16,7 +16,8 @@
     "build": "parcel build ./public/demo-2.html",
     "example-1": "node --experimental-modules ./examples/es-modules/index.js",
     "example-2": "node --experimental-modules ./examples/module-load-order/index.js",
-    "exercise-1": "node --experimental-modules ./exercises/1/index.js"
+    "exercise-1": "node --experimental-modules ./exercises/1/index.js",
+    "exercise-1-solved": "node --experimental-modules ./exercises/1-solved/index.js"
   },
   "author": "Ryan Morris",
   "license": "ISC",
@@ -29,6 +30,7 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-arrow-functions": "^7.8.3",
+    "@babel/plugin-transform-spread": "^7.8.3",
     "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.1.0",
@@ -39,8 +41,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.4",
-    "webpack": "^4.42.1",
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
 }

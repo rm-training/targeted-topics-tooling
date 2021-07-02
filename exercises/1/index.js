@@ -14,6 +14,8 @@
 // @todo import named imports from UserModel
 // @todo import the default from Auth
 
+// ------ you won't edit anything past here ------
+
 // sets some data data
 setFakeUserData([
   { id: 1, username: "username" },
