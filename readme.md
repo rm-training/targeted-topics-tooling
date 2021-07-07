@@ -13,6 +13,12 @@ If you want to execute any script that uses ES Modules, you'll need to:
 ```
 - Then you're all set
 
+You can also run with:
+
+```bash
+NODE_OPTIONS=--experimental-vm-module node script.js
+```
+
 ## Gotchas
 
 ### Curious "node-gyp" build errors? 
